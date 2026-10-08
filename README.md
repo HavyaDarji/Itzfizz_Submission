@@ -13,13 +13,13 @@ A high-performance, responsive, scroll-driven interactive hero section animation
 
 ## 🔗 Live Links
 
-- **🚀 Live Demo:** [https://havyadarji.github.io/Itzfizz_Submission/](https://havyadarji.github.io/Itzfizz_Submission/)
-- **📁 GitHub Repository:** [https://github.com/HavyaDarji/Itzfizz_Submission](https://github.com/HavyaDarji/Itzfizz_Submission)
-- **🎯 Reference Inspiration:** [Original Reference Demo](https://paraschaturvedi.github.io/car-scroll-animation)
+- **Live Demo:** [https://havyadarji.github.io/Itzfizz_Submission/](https://havyadarji.github.io/Itzfizz_Submission/)
+- **GitHub Repository:** [https://github.com/HavyaDarji/Itzfizz_Submission](https://github.com/HavyaDarji/Itzfizz_Submission)
+- **Reference Inspiration:** [Original Reference Demo](https://paraschaturvedi.github.io/car-scroll-animation)
 
 ---
 
-## 🎯 Technical Objective & Scope
+## Technical Objective & Scope
 
 The core objective of this assignment is to evaluate mastery of:
 1. **Frontend Animation Pipelines:** Designing deterministic, scroll-tied visual timelines.
@@ -29,7 +29,7 @@ The core objective of this assignment is to evaluate mastery of:
 
 ---
 
-## ✨ Key Features & Interaction Highlights
+## Key Features & Interaction Highlights
 
 ### 1. Sticky Hero Track (`100vh`) Above the Fold
 - The hero viewport occupies the full screen above the fold (`100vh` sticky track pinned within a `450vh` scroll length).
@@ -59,7 +59,7 @@ The core objective of this assignment is to evaluate mastery of:
 
 ---
 
-## 🔬 Mathematical & Animation Logic Breakdown
+## Mathematical & Animation Logic Breakdown
 
 ### 1. Spatial Geometry Caching
 To prevent layout reflows during scroll events, letter bounding client coordinates are pre-calculated upon initialization and cached into memory:
@@ -110,7 +110,7 @@ function applyBoxTransform(element, factor, directionY) {
 
 ---
 
-## ⚡ Performance & Engineering Optimizations
+## Performance & Engineering Optimizations
 
 - **GPU Composited Properties:** Transforms exclusively utilize `translateY()`, `translateX()`, and `opacity`, offloading rasterization directly to the GPU compositor layer.
 - **Zero Layout Thrashing:** Read operations (`getBoundingClientRect()`) are strictly quarantined to initialization and resize handlers. No layout queries occur inside the `onUpdate` loop.
@@ -119,7 +119,7 @@ function applyBoxTransform(element, factor, directionY) {
 
 ---
 
-## 📱 Responsive Design Matrix
+## Responsive Design Matrix
 
 | Viewport Category | Screen Width | Layout Adjustments |
 | :--- | :--- | :--- |
@@ -143,7 +143,7 @@ function applyBoxTransform(element, factor, directionY) {
 
 ---
 
-## 🚀 Local Development Setup
+## Local Development Setup
 
 No package installations or bundler configurations are required. The project runs natively in all modern evergreen browsers:
 
@@ -164,7 +164,7 @@ Open `http://localhost:3000` (or `http://localhost:8000`) in your browser to ins
 
 ---
 
-## 👨‍💻 Submission Details
+## Submission Details
 
 - **Author:** Havya Darji
 - **Assignment:** Scroll-Driven Hero Section Animation
